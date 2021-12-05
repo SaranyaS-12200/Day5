@@ -1,0 +1,155 @@
+a)Print odd numbers in an array
+Anonymous Function code:  
+
+var odd=function(num){
+    var oddnum=[];
+    for(var i=0;i<=num;i++){
+        if(i%2!==0){
+            oddnum.push(i);
+        }
+    }
+    return oddnum;
+};
+console.log(odd(20));
+
+a)Print odd numbers in an array
+IFFE  function code:
+
+(function(num){
+    var oddnum=[];
+    for(var i=0;i<=num;i++){
+        if(i%2!==0){
+            oddnum.push(i);
+        }
+    }
+    Console.log(oddnum);
+})(20);
+
+b)Convert all the strings to title caps in a string array
+Anonymous code:
+
+var toTitleCase=function(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+console.log(toTitleCase("rushil"));
+
+b)Convert all the strings to title caps in a string array
+IFFE code:
+
+(function(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      console.log(txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+    }
+  );
+})(“punith”);
+c)Sum of all numbers in an array
+Anonymous code:
+
+var arr=[1,2,3,4,5,6,7];
+var sum=function(sum){
+    var s=0;
+    for(var i=0;i<sum.length;i++){
+        s=s+sum[i];
+    }
+    return (s);
+};
+console.log(sum(arr));
+
+c)Sum of all numbers in an array
+IFFE code:
+
+var arr=[1,2,3,4,5,6,7];
+(function(sum){
+    var s=0;
+    for(var i=0;i<sum.length;i++){
+        s=s+sum[i];
+    }
+    console.log(s);
+})(arr);
+
+d)Return all the prime numbers in an array
+Anonymous code:
+
+var sum=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+var Prime=function(sum){
+    var temp=[];
+    for(var i=0;i<sum.length;i++){
+        if(sum[i]===0 || sum[i]===1){
+            console.log(sum[i] + " is not a prime");
+        }
+        if(sum[i]===2){
+            temp.push(sum[i]);
+        }
+        if(sum[i]%2!==0 && sum[i]%sum[i]===0 && sum[i]!==1){
+            temp.push(sum[i]);
+        }
+    }
+    return temp;
+};
+console.log(Prime(sum));
+
+d)Return all the prime numbers in an array
+IFFE code:
+
+var sum=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+(function(sum){
+    var temp=[];
+    for(var i=0;i<sum.length;i++){
+        if(sum[i]===0 || sum[i]===1){
+            console.log(sum[i] + " is not a prime");
+        }
+        if(sum[i]===2){
+            temp.push(sum[i]);
+        }
+        if(sum[i]%2!==0 && sum[i]%sum[i]===0 && sum[i]!==1){
+            temp.push(sum[i]);
+        }
+    }
+    console.log(temp);
+})(sum);
+
+e)Return all the palindromes in an array
+Anonymous code:
+
+var Palindrome=["madam"];
+var p=function(Palindrome){
+var temp=[];
+var split=Palindrome[0].split("");
+var reverse=split.reverse("");
+var join=reverse.join("");
+temp.push(join);
+var sp1=Palindrome.join("");
+var sp2=temp.join("");
+if(sp1 === sp2){
+    return Palindrome;
+}else{
+    return "not a palindrome";
+}
+};
+console.log(p(Palindrome));
+
+e)Return all the palindromes in an array
+IFFE code:
+
+var Palindrome=["madam"];
+(function(Palindrome){
+var temp=[];
+var split=Palindrome[0].split("");
+var reverse=split.reverse("");
+var join=reverse.join("");
+temp.push(join);
+var sp1=Palindrome.join("");
+var sp2=temp.join("");
+if(sp1 === sp2){
+    console.log(Palindrome);
+}else{
+    console.log("not a palindrome");
+}
+})(Palindrome);
