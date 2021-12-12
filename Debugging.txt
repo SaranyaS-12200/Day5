@@ -1,0 +1,211 @@
+Day5 Debugging:
+
+1)Problem:
+Write a function called “addFive”.
+Given a number, “addFive” returns 5 added to that number.
+
+Input:
+addFive(5);
+addFive(0);
+addFive(-5);
+Output:
+10
+5
+0
+
+code:
+//var num = -5;
+function addFive(num) { 
+ console.log(num+5);
+}
+ addFive(5);
+ addFive(0);
+ addFive(-5);
+
+2)Problem:
+Write a function called “getOpposite”.
+Given a number, return its opposite
+
+Input:
+getOpposite(5);
+getOpposite(0);
+getOpposite(-5);
+getOpposite(“5a”);
+getOpposite(5.5);
+Output:
+-5
+0
+5
+-1
+-1
+
+code:
+var num = 8;
+var num1=-num;
+function getOpposite(num) {
+if(((num)+(num1))===0 || ((num)+(num1))!==0)
+ console.log(num1);
+}
+getOpposite(num);
+getOpposite(5);
+getOpposite(0);
+getOpposite(-5);
+getOpposite(“5a”);
+getOpposite(5.5);
+
+3)Problem:
+Fill in your code that takes an number minutes and converts it to seconds.
+Examples
+toSeconds(5) ➞ 300
+toSeconds(3) ➞ 180
+toSeconds(2) ➞ 120
+
+code:
+var min = 5;
+function toSeconds(min) {
+     return (min*60);
+}
+console.log(toSeconds(min));
+toSeconds(3);
+toSeconds(2);
+
+4)Create a function that takes a string and returns it as an integer.
+Examples
+toInteger(“6”) ➞ 6
+toInteger(“1000”) ➞ 1000
+toInteger(“12”) ➞ 12
+
+code:
+var mystr = "5";
+function toInteger(mystr) {
+   var num=+mystr;
+   return num;
+}
+console.log(toInteger(mystr));
+toInteger(“6”);
+toInteger(“1000”);
+toInteger(“12”);
+
+5)Problem
+Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+Examples
+nextNumber(0) ➞ 1
+nextNumber(9) ➞ 10
+nextNumber(-3) ➞ -2
+
+code:
+
+var myint = -7;
+function nextNumber(myint) {
+     return (myint+1);
+}
+console.log(nextNumber(myint));
+nextNumber(0);
+nextNumber(9);
+nextNumber(-3);
+
+6)Problem
+Create a function that takes an array and returns the first element.
+Examples
+getFirstElement([1, 2, 3]) ➞ 1
+getFirstElement([80, 5, 100]) ➞ 80
+getFirstElement([-500, 0, 50]) ➞ -500
+
+code:
+
+var arr=[80, 5, 100];
+function getFirstElement(arr) {
+    console.log(arr[0]);
+}
+getFirstElement(arr);
+getFirstElement([-500, 0, 50]);
+getFirstElement([1, 2, 3]);
+
+var arr=[80, 5, 100];
+function getFirstElement(arr) {
+    return (arr[0]);
+}
+console.log(getFirstElement(arr));
+
+7)Problem
+Convert Hours into Seconds
+Write a function that converts hours into seconds.
+Examples
+hourToSeconds(2) ➞ 7200
+hourToSeconds(10) ➞ 36000
+hourToSeconds(24) ➞ 86400
+
+code:
+
+function hourToSeconds(arr) {
+    return (arr*3600);
+}
+console.log(hourToSeconds(24));
+console.log(hourToSeconds(2));
+console.log(hourToSeconds(10));
+
+8)Problem
+Find the Perimeter of a Rectangle
+Create a function that takes height and width and finds the perimeter of a rectangle.
+Examples
+findPerimeter(6, 7) ➞ 26
+findPerimeter(20, 10) ➞ 60
+findPerimeter(2, 9) ➞ 22
+
+code:
+function findPerimeter(n1,n2) {
+    var cal=2*(n1+n2);
+    return cal;
+    
+}
+console.log(findPerimeter(6,7));
+console.log(findPerimeter(20, 10));
+console.log(findPerimeter(2, 9));
+
+9)Problem
+Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
+
+code:
+
+function lessThan100(num1,num2) {
+var num=num1+num2;
+if(num<100){
+    return "true";
+}
+else{return "false";}
+}
+console.log(lessThan100(83,34));
+console.log(lessThan100(22, 15));
+
+10)Problem
+There is a single operator in JavaScript, capable of providing the remainder of a division operation. 
+Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder,
+possibly zero. Return that value.
+Examples
+remainder(1, 3) ➞ 1
+remainder(3, 4) ➞ 3
+remainder(-9, 45) ➞ -9
+remainder(5, 5) ➞ 0
+
+code:
+
+function remainder(num1,num2) {
+    var value=num1%num2;
+    return value;
+}
+console.log(remainder(-9,45));
+console.log(remainder(3, 4));
+console.log(remainder(1, 3));
+console.log(remainder(5, 5));
+
+
+
+
+
+
